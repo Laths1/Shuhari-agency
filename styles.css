@@ -930,7 +930,16 @@ gallery
     .gallery-slideshow{
         padding: 0;
     }
-    
+   .carousel-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 16rem;
+    height: 65%;
+   }
+   .carousel-caption .btn{
+    display: none;
+   }
     
 }
 /* ==========
@@ -1478,7 +1487,7 @@ talents
         text-align: center;
     }
     .person-container h1{
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
     .talent-container2{
         margin: 1rem auto;
@@ -1634,9 +1643,9 @@ footer
     grid-column-end: 5;
     text-align: center;
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:996px){
     .footer-container{
-    padding:4rem 8rem;
+    padding:2rem 8rem;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -1650,7 +1659,7 @@ footer
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     padding: 0 1rem;
+     padding: 2rem 1rem;
      gap: 1rem;
      
     }
@@ -1671,35 +1680,10 @@ footer
  .footer-logo img{
      padding: 0 1rem;
  }
+ .copyright{
+    padding: 2rem;
+ }
      
  }
  
  
- @media screen and (max-width:1000px){
-    .footer-container{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding:4rem 8rem;
-    }
-    .footer-info{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     padding: 0 1rem;
-     gap: 1rem;
-     
-    }
-    .footer-discover h3{
-     padding-bottom: .5rem;
-     color: var(--primary-color-5);
- }
-    .footer-links h3{
-     padding-bottom: .5rem;
-     color: var(--primary-color-5);
- }
- .footer-logo img{
-     padding: 0 1rem;
- }
- }

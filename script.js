@@ -32,15 +32,8 @@ function sendContactMail(){
     from_email : document.getElementById("contact-email").value,
   }
   console.log(param);
-  emailjs.send("service_3ix5u63", "template_4sgz0wt", param)
-  .then(function (response) {
-    console.log('SUCCESS!', response.status, response.text);
-    alert("Message has been sent successfully from: " + param.from_name);
-  })
-  .catch(function (error) {
-    console.log('FAILED', error);
-  });
-  
+  emailjs.send("service_3ix5u63", "template_bsc94np", param)
+  .then(alert("Message has been sent successfully from: " + param.from_name));
 }
 // application
 function getSelectedOption() {
@@ -62,12 +55,6 @@ function sendApplyMail(){
   }
   console.log(param);
   emailjs.send("service_3ix5u63", "template_4sgz0wt", param)
-  .then(function (response) {
-    console.log('SUCCESS!', response.status, response.text);
-    alert("Application has been sent successfully from: " + param.from_name);
-  })
-  .catch(function (error) {
-    console.log('FAILED', error);
-  });
-  
+  .then(alert("Application has been sent successfully from: " + param.from_name));
+ 
 }
