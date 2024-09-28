@@ -61,6 +61,10 @@ overflow-x: hidden;
         
     }
 } */
+ .fa-brands{
+    font-size: 3rem;
+    color: var(--primary-color-5);
+ }
 *{
     margin: 0;
     padding: 0;
@@ -923,8 +927,15 @@ gallery
     bottom: 16rem;
     height: 65%;
    }
+   .carousel-caption p{
+    font-size: 1rem;
+    padding: .125rem .5rem;
+   }
    .carousel-caption .btn{
     display: none;
+   }
+   .prev, .next{
+    font-size: 1.5rem;
    }
     
 }
@@ -1523,45 +1534,22 @@ footer
     display: flex;
     justify-content: space-between;
 }
-.footer-logo{
-    max-width: 5rem;
-    padding: 2rem 0;
+.footer-info li{
+    padding:0.25rem 0;
+    font-weight: 200;
 }
+.footer-info h3{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    color: var(--primary-color-5);
+}
+.footer-info ul{
+    text-align: center;
+}
+
 .footer-container p {
     font-size: 1.125rem;
     color: var(--primary-color-5);
-}
-.footer-logo{
-    grid-column-start: 1;
-    grid-column-end: span 4;
-}
-.footer-discover h3{
-    padding-bottom: 1.5rem;
-    color: var(--primary-color-5);
-}
-.footer-disposal h3{
-    padding-bottom: 1.5rem;
-    color: var(--primary-color-5);
-}
-.footer-links h3{
-    padding-bottom: 1.5rem;
-    color: var(--primary-color-5);
-}
-.footer-updates h3{
-    padding-bottom: 1.5rem;
-    color: var(--primary-color-5);
-}
-.footer-discover li{
-    padding:0.25rem 0;
-    font-weight: 200;
-}
-.footer-disposal li{
-    padding:0.25rem 0;
-    font-weight: 200;
-}
-.footer-links li{
-    padding:0.25rem 0;
-    font-weight: 200;
 }
 
 .footer-disposal{
@@ -1570,7 +1558,13 @@ footer
 
 .disposal-list li{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+}
+.disposal-list{
+    margin: auto;
+    text-align: center;
 }
 .disposal-list li .material-symbols-outlined{
     color: var(--primary-color-5); 
@@ -1650,6 +1644,7 @@ footer
      gap: 1rem;
      
     }
+
     .footer-discover,.footer-disposal,.footer-links,.disposal-list{
         text-align: center;
         display: flex;
